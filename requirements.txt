@@ -1,0 +1,15 @@
+albumentations==1.4.21
+matplotlib>=3.9,<4.0
+numpy>=1.23,<2.0
+opencv-python>=4.10,<5.0
+opencv-python-headless>=4.10,<5.0
+Pillow==11.0.0
+segmentation-models==1.0.1
+segmentation-models-pytorch==0.3.4
+streamlit>=1.41,<2.0
+tensorflow>=2.15,<2.16
+torch==2.5.1
+torchmetrics==1.6.0
+torchvision==0.20.1
+bitnet==0.2.5
+zetascale==2.7.3
