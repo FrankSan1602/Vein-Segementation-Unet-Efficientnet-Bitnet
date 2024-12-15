@@ -8,7 +8,7 @@ import numpy as np
 import cv2
 import matplotlib.pyplot as plt
 
-st.set_page_config(page_title='Segmentación de Venas', layout = 'wide', page_icon = 'venas.png', initial_sidebar_state = 'auto')
+st.set_page_config(page_title='Segmentación de Venas', layout = 'wide', page_icon = './venas.png', initial_sidebar_state = 'auto')
 
 BACKBONE = 'efficientnet-b3'
 CLASSES = ['veins']
