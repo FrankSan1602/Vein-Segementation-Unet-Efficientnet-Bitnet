@@ -121,13 +121,35 @@ def predict(model, image_tensor):
         prediction = torch.sigmoid(output).squeeze().numpy()
     return prediction
 
-
+@st.dialog("Instrucciones de Uso")
+def instrucciones():
+    st.markdown("""
+        ### Instrucciones:
+        1. Haz clic en el botón **"Subir Imagen"** y selecciona la imagen que deseas analizar.
+        """, unsafe_allow_html=True)
+    st.image("./paso_1.jpg", caption="Paso 1: Subir Imagen", use_container_width=True)
+    st.markdown("""
+        2. Espera unos segundos para que se procesen los resultados:
+            - La primera sección muestra la imagen original.
+            - La segunda sección superpone la segmentación de venas.
+        """, unsafe_allow_html=True)
+    st.image("./paso_2.jpg", caption="Paso 2: Resultados de Segmentación", use_container_width=True)
+    st.markdown("""
+        3. Para realizar otra predicción:
+            - Cierra la imagen subida haciendo clic en el tache junto al nombre del archivo.
+            - Luego sube una nueva imagen para repetir el proceso.
+        """, unsafe_allow_html=True)
+    st.image("./paso_3.jpg", caption="Paso 3: Realizar otra Segmentación", use_container_width=True)
 
 # Interfaz gráfica con Streamlit
 st.markdown("<h1 style='text-align: center; color: #3B83BD; padding: 1rem;'>- Segmentación de Venas - ESCOM IPN -</h1>", unsafe_allow_html=True)
 st.markdown("<h1 style='text-align: center; color: #B61F24; padding: 1rem;'>UNET ~ EFFICIENTNET ~ BITNET</h1>", unsafe_allow_html=True)
 st.markdown("<h2 style='text-align: center; color: #3B83BD; padding: 1rem;'>Franco Tadeo Sánchez García</h2>", unsafe_allow_html=True)
 st.markdown("<h3 style='text-align: left; color: white;'>Carga una imagen para segmentar las venas.</h3>", unsafe_allow_html=True)
+
+# Botón para mostrar el diálogo de instrucciones
+if st.button("¿Cómo usar esta app?"):
+    instrucciones()
 
 # Carga de imagen
 uploaded_file = st.file_uploader("Subir Imagen", type=["png", "jpg", "jpeg"])
