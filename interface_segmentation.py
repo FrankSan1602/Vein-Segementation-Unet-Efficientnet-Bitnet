@@ -121,7 +121,7 @@ def predict(model, image_tensor):
         prediction = torch.sigmoid(output).squeeze().numpy()
     return prediction
 
-@st.dialog("Instrucciones de Uso")
+@st.dialog("Instrucciones de Uso", width="large")
 def instrucciones():
     st.markdown("""
         ### Instrucciones:
