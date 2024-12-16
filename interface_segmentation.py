@@ -145,7 +145,15 @@ def instrucciones():
 st.markdown("<h1 style='text-align: center; color: #3B83BD; padding: 1rem;'>- Segmentación de Venas - ESCOM IPN -</h1>", unsafe_allow_html=True)
 st.markdown("<h1 style='text-align: center; color: #B61F24; padding: 1rem;'>UNET ~ EFFICIENTNET ~ BITNET</h1>", unsafe_allow_html=True)
 st.markdown("<h2 style='text-align: center; color: #3B83BD; padding: 1rem;'>Franco Tadeo Sánchez García</h2>", unsafe_allow_html=True)
-st.markdown("<h3 style='text-align: left; color: white;'>Carga una imagen para segmentar las venas.</h3>", unsafe_allow_html=True)
+
+col1, col2 = st.columns([8,1])
+
+with col1:
+    st.markdown("<h3 style='text-align: left; color: white;'>Carga una imagen para segmentar las venas.</h3>", unsafe_allow_html=True)
+with col2:
+    # Botón para mostrar el diálogo de instrucciones
+    if st.button("¿Cómo usar esta app?"):
+        instrucciones()
 
 # Botón para mostrar el diálogo de instrucciones
 if st.button("¿Cómo usar esta app?"):
