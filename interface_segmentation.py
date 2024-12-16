@@ -154,11 +154,7 @@ with col2:
     # Botón para mostrar el diálogo de instrucciones
     if st.button("¿Cómo usar esta app?"):
         instrucciones()
-
-# Botón para mostrar el diálogo de instrucciones
-if st.button("¿Cómo usar esta app?"):
-    instrucciones()
-
+    
 # Carga de imagen
 uploaded_file = st.file_uploader("Subir Imagen", type=["png", "jpg", "jpeg"])
 if uploaded_file is not None:
