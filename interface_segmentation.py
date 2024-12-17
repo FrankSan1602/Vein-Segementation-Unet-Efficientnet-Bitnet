@@ -142,9 +142,10 @@ def instrucciones():
     st.image("./paso_3.jpg", caption="Paso 3: Realizar otra Segmentación", use_container_width=True)
 
 # Interfaz gráfica con Streamlit
-st.markdown("<h1 style='text-align: center; color: #3B83BD; padding: 1rem;'>- Segmentación de Venas - ESCOM IPN -</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: #3B83BD; padding: 1rem;'>- Segmentación de Venas - CIC IPN -</h1>", unsafe_allow_html=True)
 st.markdown("<h1 style='text-align: center; color: #B61F24; padding: 1rem;'>UNET ~ EFFICIENTNET ~ BITNET</h1>", unsafe_allow_html=True)
-st.markdown("<h2 style='text-align: center; color: #3B83BD; padding: 1rem;'>Franco Tadeo Sánchez García</h2>", unsafe_allow_html=True)
+st.markdown("<h2 style='text-align: center; color: #3B83BD; padding: 1rem;'>Dr. Juan Humberto Sossa Azuela | Dr. Jesús Yaljá Montiel Pérez</h2>", unsafe_allow_html=True)
+st.markdown("<h2 style='text-align: center; color: #3B83BD; padding: 1rem;'>&emsp;&emsp;&emsp; Dr. Rodolfo Romero Herrera &emsp;| Ing. Franco Tadeo Sánchez García</h2>", unsafe_allow_html=True)
 
 col1, col2 = st.columns([8,1])
 
